@@ -2,6 +2,6 @@
     if (ls.isEmpty){
       List()
     } else {
-      List.concat(reversList(ls.tail), List(ls.head))
+      reversList(ls.tail) ::: List(ls.head)
     }
   }
