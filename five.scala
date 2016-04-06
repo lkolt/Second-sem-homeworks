@@ -3,7 +3,7 @@
       if (ls.isEmpty){
         acc
       } else {
-        loop(ls.tail, List(ls.head) ::: acc)
+        loop(ls.tail, ls.head :: acc)
       }
     }
     loop(ls, List())
